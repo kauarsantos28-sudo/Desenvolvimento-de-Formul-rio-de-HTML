@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Clientes</h1>
+
+    <form>
+
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome Completo:</label><br>
+            <input type="text" name="nome" required><br><br>
+
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Senha:</label><br>
+            <input type="password" name="senha" required minlength="6"><br><br>
+
+            <label>Data de Nascimento:</label><br>
+            <input type="date" name="dataNascimento" required><br><br>
+
+            <label>CPF:</label><br>
+            <input type="text" name="cpf" required maxlength="14"
+                   placeholder="000.000.000-00"><br><br>
+
+            <label>Telefone:</label><br>
+            <input type="tel" name="telefone" required
+                   placeholder="(00) 00000-0000"><br><br>
+
+            <label>Nome da Mãe:</label><br>
+            <input type="text" name="mae" required><br><br>
+
+            <label>Nome do Pai:</label><br>
+            <input type="text" name="pai" required><br><br>
+
+            <label>Estado Civil:</label><br>
+            <select name="estadoCivil" required>
+                <option value="">Selecione</option>
+                <option>Solteiro</option>
+                <option>Casado</option>
+                <option>União Estável</option>
+                <option>Separado</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <!-- ENDEREÇO -->
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label>Rua:</label><br>
+            <input type="text" name="rua" required><br><br>
+
+            <label>Número:</label><br>
+            <input type="number" name="numero" required><br><br>
+
+            <label>Bairro:</label><br>
+            <input type="text" name="bairro" required><br><br>
+
+            <label>Cidade:</label><br>
+            <input type="text" name="cidade" required><br><br>
+
+            <label>Estado:</label><br>
+            <select name="estado" required>
+                <option value="">Selecione</option>
+                <option>Pernambuco</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+            </select><br><br>
+
+            <label>CEP:</label><br>
+            <input type="text" name="cep" required
+                   placeholder="00000-000"><br><br>
+
+            <label>País:</label><br>
+            <input type="text" name="pais" required><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- SEXO -->
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" value="Masculino" required>
+            <label>Masculino</label><br>
+
+            <input type="radio" name="sexo" value="Feminino">
+            <label>Feminino</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- TECNOLOGIAS -->
+        <fieldset>
+            <legend>Tecnologias</legend>
+
+            <input type="checkbox" name="tecnologia" value="HTML">
+            <label>HTML</label><br>
+
+            <input type="checkbox" name="tecnologia" value="CSS">
+            <label>CSS</label><br>
+
+            <input type="checkbox" name="tecnologia" value="JavaScript">
+            <label>JavaScript</label><br>
+
+            <input type="checkbox" name="tecnologia" value="Python">
+            <label>Python</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- COMENTÁRIOS -->
+        <fieldset>
+            <legend>Comentários</legend>
+
+            <textarea name="comentarios" rows="5" cols="50"
+                      placeholder="Digite suas observações aqui..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <!-- BOTÕES -->
+        <button type="submit">Enviar Cadastro</button>
+
+        <button type="reset">Limpar Formulário</button>
+
+    </form>
+
+</body>
+</html>
